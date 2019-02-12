@@ -30,5 +30,8 @@ punchline_wordcount = 20
 df = df[df.body.str.split().str.len() <= 20]
 print(len(df))
 
+# Remove any \n or \r tags from the body (sometimes included)
+df['body'] = df['body'].str.replace(r"[\n\r]*", "")
+
 outfilename = join(current_dir,"./jokes_dataset_CLEAN.csv")
 df.to_csv(outfilename)
