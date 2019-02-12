@@ -29,3 +29,6 @@ print(len(df))
 punchline_wordcount = 20
 df = df[df.body.str.split().str.len() <= 20]
 print(len(df))
+
+outfilename = join(current_dir,"./jokes_dataset_CLEAN.csv")
+df.to_csv(outfilename)
