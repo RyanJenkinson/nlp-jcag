@@ -26,8 +26,9 @@ print(len(df))
 df = df[df.title.str.contains('[?.!]$')]
 print(len(df))
 # Make sure the punchline isn't too long
-punchline_wordcount = 20
-df = df[df.body.str.split().str.len() <= 20]
+max_wordcount = 20
+df = df[df.body.str.split().str.len() <= max_wordcount]
+df = df[df.title.str.split().str.len() <= max_wordcount]
 print(len(df))
 
 # Remove any \n or \r tags from the body (sometimes included)
