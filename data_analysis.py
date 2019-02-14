@@ -9,5 +9,4 @@ filename = join(current_dir,"./jokes_dataset_CLEAN.csv")
 
 df = pd.read_csv(filename)
 
-print(df.iloc[522,:]['body'])
-print(df.iloc[523,:]['body'])
+# TO DO DATA ANALYSIS, INCLUDING DISTRIBUTION OF SCORES ETC
