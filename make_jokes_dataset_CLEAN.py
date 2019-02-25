@@ -26,12 +26,12 @@ df = df[idx]
 print(len(df))
 
 # Restrict our attention to those where the title ends in punctuation (should remove spam)
-df = df[df.title.str.contains('[?.!]$')]
+df = df[df.title.str.contains('[?.!"]$')]
 print(len(df))
 
 # Make sure the punchline isn't too long
-max_wordcount_setup = 40
-max_wordcount_punchline = 20
+max_wordcount_setup = 50
+max_wordcount_punchline = 10
 df = df[df.body.str.split().str.len() <= max_wordcount_punchline]
 df = df[df.title.str.split().str.len() <= max_wordcount_setup]
 print(len(df))
