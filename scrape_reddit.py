@@ -2,6 +2,7 @@ import praw
 import pandas as pd
 import datetime as dt
 
+# TO DO: Remove info when we make our GitHub Public
 reddit = praw.Reddit(client_id='GODFmBxq92To5Q', \
                      client_secret='ZvhZ6sueZyArNUTjkru1nfDUgk8', \
                      user_agent='joke_scrapr', \
