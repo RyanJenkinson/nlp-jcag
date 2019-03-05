@@ -3,8 +3,8 @@ import json
 from os.path import dirname, join
 
 current_dir = dirname(__file__)
-infilename = join(current_dir, "../data/raw_data/reddit_jokes.json")
-outfilename = join(current_dir, "../data/processed_data/jokes_dataset.csv")
+infilename = join(current_dir, "../data/processed_data/scraped_data.json")
+outfilename = join(current_dir, "../data/processed_data/scraped_data_test.csv")
 
 infile = open(infilename,'r')
 outfile = open(outfilename,'w', encoding='utf-8')
