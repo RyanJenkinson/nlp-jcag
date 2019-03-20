@@ -18,11 +18,13 @@ Please read the attached paper/final report (titled "SNLP_CW3_Group_2.pdf") for 
 We also contribute a dataset of scraped Reddit data to the field of computational humour, building on the dataset already available on Github by taivop: https://github.com/taivop/joke-dataset
 
 ## Citation
-`@misc{JokeScorer,
+```
+@misc{JokeScorer,
         title={Does this sound like a joke to you?! The Pursuit of a Joke Scoring Model},
         url={https://github.com/ryanjenkinson/nlp-jcag},
         author={Jenkinson, R, Brayne, A, Morley, \'{E}},
         year={2019},
         publisher = {GitHub},
         journal = {GitHub repository}
-}`
+}
+```
