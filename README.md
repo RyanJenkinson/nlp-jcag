@@ -13,4 +13,16 @@ We set out to automate this evaluation process by training a scoring model that 
 We sought to better understand how our models were learning and why they were not achieving better results.
 
 ## Contributions and Conclusions
-Please read the attached paper for a detailed analysis of which models worked well and why, but a brief summary is that Google pretrained BERT embeddings that use a bidirectional LSTM model to capture contextual word embeddings worked better than even hyperparameter optimised "classical" Deep Learning models. CNNs worked better than LSTMs for our task. We believe that this is due to the fact that context is a key attribute to the funniness of a joke, as backed up by sociological theory: incongruity juxtaposition resolution theory posits that the moment of realising incongruity (defined by Kao et al (2013) as “perceiving a situation from different viewpoints and finding the resulting interpretations to be incompatible") is what makes a joke funny.
+Please read the attached paper/final report (titled "SNLP_CW3_Group_2.pdf") for a detailed analysis of which models worked well and why, but a brief summary is that Google pretrained BERT embeddings that use a bidirectional LSTM model to capture contextual word embeddings worked better than even hyperparameter optimised "classical" Deep Learning models. CNNs worked better than LSTMs for our task. We believe that this is due to the fact that context is a key attribute to the funniness of a joke, as backed up by sociological theory: incongruity juxtaposition resolution theory posits that the moment of realising incongruity (defined by Kao et al (2013) as “perceiving a situation from different viewpoints and finding the resulting interpretations to be incompatible") is what makes a joke funny.
+
+We also contribute a dataset of scraped Reddit data to the field of computational humour, building on the dataset already available on Github by taivop: https://github.com/taivop/joke-dataset
+
+## Citation
+`@misc{JokeScorer,
+        title={Does this sound like a joke to you?! The Pursuit of a Joke Scoring Model},
+        url={https://github.com/ryanjenkinson/nlp-jcag},
+        author={Jenkinson, R, Brayne, A, Morley, \'{E}},
+        year={2019},
+        publisher = {GitHub},
+        journal = {GitHub repository}
+}`
